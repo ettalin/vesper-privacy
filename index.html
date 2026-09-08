@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vesper — Privacy Policy</title>
+<meta name="description" content="How Vesper, a private time-tracking Chrome extension, handles your data. Everything stays on your own machine.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234f46e5' stroke-width='1.6' stroke-linecap='round'><path d='M12 4.2a7.8 7.8 0 1 1-6.9 4.2'/><circle cx='12' cy='4.2' r='1.9' fill='%234f46e5'/></svg>">
+<style>
+  :root{
+    color-scheme: light dark;
+    --ink:#14161a; --ink-2:#4b4f57; --ink-3:#82868f;
+    --line:rgba(18,20,24,.09); --bg:#fbfbfc; --surface:#fff;
+    --accent:#4f46e5; --accent-ink:#3730a3; --accent-wash:#eef0ff;
+    --r:14px;
+    --font:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --ink:#f2f3f5; --ink-2:#b6bac1; --ink-3:#868b95;
+      --line:rgba(255,255,255,.10); --bg:#0d0e11; --surface:#141519;
+      --accent:#8b85f5; --accent-ink:#c3bffb; --accent-wash:rgba(139,133,245,.14);
+    }
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  body,h1,h2,h3,p,ul,ol,dl,dd{margin:0;padding:0}
+  ul,ol{list-style:none}
+  body{
+    font-family:var(--font); font-size:16px; line-height:1.65;
+    color:var(--ink); background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:44rem;margin:0 auto;padding:56px 24px 96px}
+  header{display:flex;align-items:center;gap:11px;margin-bottom:44px}
+  header svg{color:var(--accent);flex:none}
+  header .n{font-size:17px;font-weight:620;letter-spacing:-.015em}
+  header .t{font-size:13px;color:var(--ink-3)}
+  h1{font-size:clamp(28px,5vw,38px);font-weight:620;letter-spacing:-.03em;line-height:1.15;margin-bottom:12px}
+  .updated{font-size:13.5px;color:var(--ink-3);margin-bottom:34px}
+  .lede{font-size:18px;line-height:1.6;color:var(--ink-2);margin-bottom:14px}
+  h2{font-size:19px;font-weight:620;letter-spacing:-.018em;margin:44px 0 12px;scroll-margin-top:20px}
+  h3{font-size:15.5px;font-weight:620;margin:24px 0 8px}
+  p{margin-bottom:14px;color:var(--ink-2)}
+  strong{color:var(--ink);font-weight:600}
+  a{color:var(--accent-ink);text-decoration-color:color-mix(in oklab,var(--accent) 40%,transparent);text-underline-offset:2px}
+  ul.b{margin:0 0 16px;display:flex;flex-direction:column;gap:8px}
+  ul.b li{position:relative;padding-left:22px;color:var(--ink-2)}
+  ul.b li::before{content:"";position:absolute;left:4px;top:.7em;width:5px;height:5px;border-radius:9px;background:var(--ink-3)}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;margin:22px 0}
+  .card.key{background:var(--accent-wash);border-color:transparent}
+  .card.key p:last-child{margin-bottom:0}
+  .card.key strong{color:var(--accent-ink)}
+  table{width:100%;border-collapse:collapse;font-size:14.5px;margin:16px 0 22px}
+  th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-3);font-weight:620;padding:0 10px 9px;border-bottom:1px solid var(--line)}
+  td{padding:11px 10px;border-bottom:1px solid var(--line);color:var(--ink-2);vertical-align:top}
+  td:first-child{color:var(--ink);font-weight:520;width:44%}
+  .yes{color:var(--accent-ink);font-weight:600}
+  footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-3)}
+  footer a{color:var(--ink-2)}
+  .toc{display:flex;flex-wrap:wrap;gap:7px;margin:26px 0 8px}
+  .toc a{
+    font-size:13px;text-decoration:none;color:var(--ink-2);
+    padding:5px 11px;border:1px solid var(--line);border-radius:999px;
+    transition:background .15s cubic-bezier(.2,.8,.2,1),color .15s;
+  }
+  .toc a:hover{background:var(--accent-wash);color:var(--accent-ink)}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 4.2a7.8 7.8 0 1 1-6.9 4.2"/><circle cx="12" cy="4.2" r="1.9" fill="currentColor" stroke="none"/>
+  </svg>
+  <div>
+    <div class="n">Vesper</div>
+    <div class="t">A private time tracker for Chrome</div>
+  </div>
+</header>
+
+<h1>Privacy Policy</h1>
+<div class="updated">Last updated <time datetime="2026-09-08">8 September 2026</time></div>
+
+<p class="lede">Vesper records how you spend your time in one Chrome profile, so it can write your day up for you.</p>
+
+<div class="card key">
+  <p><strong>What Vesper records stays on your own computer</strong> — unless you switch on one of the two optional features described below, which send data to addresses <em>you</em> supply, on services <em>you</em> control.</p>
+  <p>Either way, the developer operates no server, receives nothing, and has no way to see anything Vesper records. There is no account, no sign-in, no analytics, no advertising and no third-party code of any kind.</p>
+</div>
+
+<div class="toc" id="toc"></div>
+
+<h2 id="publisher">Who publishes Vesper</h2>
+<p>Vesper is published by an individual developer, ordinarily resident in Jamaica, contactable at the address at the foot of this page. There is no company, no team and no third party involved.</p>
+
+<h2 id="records">What Vesper records</h2>
+<p>Only while tracking is switched on, and only in the single Chrome profile it is installed in. This is the complete list:</p>
+<ul class="b">
+  <li>the website address (hostname) of the tab you are currently looking at</li>
+  <li>its page title — <em>on by default, can be switched off</em></li>
+  <li>search terms, when the page is a search results page — <em>on by default, can be switched off</em></li>
+  <li>the full web address of the page — <em>off by default, can be switched on</em></li>
+  <li>how long you spent there, and the times you started and stopped</li>
+  <li>whether you were typing or reading, and whether your computer was idle, from Chrome's own idle signal</li>
+  <li>whether a video call is running in a tab, and for how long</li>
+  <li>if you connect a calendar: the <strong>title</strong> and start and end times of meetings that overlap your quiet periods. Meeting titles follow the same switch as page titles — turn titles off and no meeting name is kept, only the timing. Attendees, organisers and locations are never read at all.</li>
+  <li>the name you give this workspace, and a work email address if you choose to type one in</li>
+  <li>your own notes, and your one-tap answers about quiet periods — together with what Vesper learns from those answers, so it can stop asking</li>
+  <li>your settings, including the calendar address and the spreadsheet address and token, if you enter them</li>
+</ul>
+
+<h2 id="why">Why each of these is recorded</h2>
+<p>Every item above exists to make a feature you can see work. Nothing is recorded speculatively, and nothing is kept that no feature reads.</p>
+<table>
+  <thead><tr><th>What is recorded</th><th>The feature it makes possible</th></tr></thead>
+  <tbody>
+    <tr><td>Site, page title, time spent</td><td>The day's line items and the written summary — the whole product</td></tr>
+    <tr><td>Search terms</td><td>Turning an hour of scattered tabs into one readable line, such as "Research — capacity planning"</td></tr>
+    <tr><td>Typing, reading and idle state</td><td>Counting reading and calls as work instead of stopping the clock the moment you stop typing</td></tr>
+    <tr><td>Video call state</td><td>Separating meeting time from heads-down time without counting an hour twice</td></tr>
+    <tr><td>Meeting titles and times</td><td>Naming a quiet period so you don't have to, and so it need not ask you</td></tr>
+    <tr><td>Notes, answers, what it learns</td><td>Correcting the day before you commit it, and not being asked the same question twice</td></tr>
+    <tr><td>Workspace name and work email</td><td>Telling your profiles apart, and attributing a committed day in your own spreadsheet</td></tr>
+  </tbody>
+</table>
+
+<h2 id="never">What Vesper never records</h2>
+<ul class="b">
+  <li>your microphone or camera — the extension does not request these permissions and cannot access them</li>
+  <li>the contents of any page, including text, form fields and passwords</li>
+  <li>what you type — no keystrokes are captured, and no code is injected into any page</li>
+  <li>anything at all from any other Chrome profile</li>
+  <li>anything while browsing privately — Vesper is disabled in Incognito</li>
+  <li>meeting attendees, organisers or locations, even when a calendar is connected</li>
+</ul>
+
+<h2 id="consent">Nothing happens until you say so</h2>
+<p>When you install Vesper, tracking is <strong>off</strong>. Nothing is recorded until you open the settings, read a plain description of exactly what will be recorded, and press <strong>Start tracking</strong>. You can pause it at any moment from the toolbar.</p>
+<p>Each of the items above can be switched off individually. When one is off it is <strong>never written down in the first place</strong> — it is not merely hidden from view. You can also list websites that Vesper must never record; time on those is either counted with no detail kept, or not counted at all, whichever you choose.</p>
+
+<h2 id="storage">Where it is kept</h2>
+<p>In your browser's local extension storage, on your own machine. Vesper uses local storage only and never Chrome's sync storage, so nothing is copied to your Google account or to your other devices.</p>
+<p>Detailed activity is compressed after 7 days and deleted after a period you choose, 45 days by default. <strong>Delete all data</strong> in the settings removes everything immediately. Removing Vesper from <code>chrome://extensions</code> deletes everything it holds.</p>
+
+<h2 id="leaving">The two optional features that send data out of your browser</h2>
+<p>Both are <strong>off</strong> when you install Vesper. Turn neither on and nothing ever leaves your browser. Turn one on and here is exactly what happens.</p>
+
+<h3>1. Your calendar</h3>
+<p>If you paste a private calendar address (an iCal link) into the settings, Vesper fetches that calendar directly from your browser to whichever host you named, so meetings can label themselves. It reads only event titles and their start and end times. It never writes to your calendar, and it sends nothing to anyone. Any secure calendar host works — Google, Outlook, Fastmail or your own.</p>
+
+<h3>2. Committing a day to your spreadsheet</h3>
+<p>If you paste in the address of a Google Apps Script you have deployed to your own Google account, then pressing <strong>Commit</strong> sends that day to your own Google Sheet or Doc. What is sent is the summary you have just reviewed and edited: the line item titles, their kinds and durations, start and end times, any project labels, your notes, the day's totals, your timezone, the workspace name, and the work email if you entered one.</p>
+
+<p>Both addresses are ones you supply, on infrastructure you control, and both must be secure (https). The developer does not operate either destination, never sees either address, and receives nothing from either request. <strong>Once data reaches them it is governed by that provider's terms and your own settings, not by this extension.</strong></p>
+
+<h2 id="shared">Who your data is shared with, and selling</h2>
+<p>The complete list:</p>
+<ul class="b">
+  <li>your own calendar host — only if you connect a calendar, and only to read it</li>
+  <li>your own Google Apps Script and the Google account it belongs to — only if you connect one, and only when you press Commit</li>
+  <li>nobody else</li>
+</ul>
+<p>There are no third-party libraries, no analytics service, no advertising network, no crash reporter and no data broker. The extension contains no third-party code.</p>
+
+<p>Your data is never sold, never shared, and never transferred to anyone. It is not used for advertising, for building any profile of you, or for any purpose other than showing you your own time and — at your instruction — sending it to your own spreadsheet. There is no third party of any kind involved.</p>
+
+<h2 id="limited">Limited Use</h2>
+<p>Vesper's use of information received from Google APIs will adhere to the <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use" rel="noopener">Chrome Web Store User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2 id="security">How it is protected, honestly</h2>
+<p>Both optional connections use a secure (https) address, so anything sent is encrypted in transit. <strong>What is stored on your computer is not encrypted</strong> — it sits in your browser's own extension storage. Anyone who can use your computer, or who has your Chrome profile, can read it. Vesper is not a vault; it is a notebook that stays on your desk.</p>
+<p>No certification, audit, security review or standard is claimed. None has been carried out.</p>
+
+<h2 id="rights">Your rights over this data</h2>
+<p>This is personal information — hostnames, page titles and search terms all describe you. It is not anonymous and this policy does not pretend otherwise.</p>
+<p>But because it is held on your own computer and the developer never receives it, there is nobody to make a request to. You hold it directly, and every right is a button:</p>
+<table>
+  <thead><tr><th>What you may want</th><th>How to do it</th></tr></thead>
+  <tbody>
+    <tr><td>See everything held about you</td><td>Settings → <strong>Back up everything</strong>, which downloads the complete contents as a readable file</td></tr>
+    <tr><td>Take it elsewhere</td><td>The same backup file, plus <code>.csv</code> and <code>.md</code> exports from the Export screen</td></tr>
+    <tr><td>Correct something</td><td>Every line item can be renamed, re-timed or removed on the review screen before it is committed</td></tr>
+    <tr><td>Erase all of it</td><td>Settings → <strong>Delete all data</strong>, or remove the extension</td></tr>
+    <tr><td>Stop the processing</td><td>Pause from the toolbar, at any time</td></tr>
+  </tbody>
+</table>
+
+<h2 id="law">Data protection law</h2>
+<p>Vesper is free software published by one individual who receives no data from it and no revenue from it. On that footing it does not meet the applicability thresholds of the California Consumer Privacy Act, and the General Data Protection Regulation is not engaged, since Vesper is not offered into the European Union and the developer neither collects nor monitors anything.</p>
+<p>Rather than claim compliance with regimes that do not apply — or a certification that does not exist — this policy sets out plainly what is recorded, why, where it stays, and how to remove it. Storing your time log is the very thing you asked Vesper to do, and it is used for nothing else.</p>
+<p>If you are subject to rules that require more than this, the honest answer is to ask before installing.</p>
+
+<h2 id="children">Children</h2>
+<p>Vesper is a tool for working adults. It is not directed at children, and it is not knowingly made available to anyone under 13.</p>
+
+<h2 id="changes">Changes to this policy</h2>
+<p>If this policy changes, the date at the top changes with it, and the previous versions remain visible in the public history of the repository this page is published from.</p>
+
+<h2 id="contact">Contact</h2>
+<p id="contact-line">Questions about this policy, or about Vesper: <a href="mailto:bkeepersja@gmail.com">bkeepersja@gmail.com</a></p>
+
+<footer>
+  <p>Vesper is a free Chrome extension published by an individual developer.<br>
+  This page is the privacy policy referenced by its Chrome Web Store listing.</p>
+</footer>
+
+</div>
+<script>
+  // Build the contents from the headings, so it can never drift from the document.
+  const toc = document.getElementById("toc");
+  for (const h of document.querySelectorAll("h2[id]")) {
+    const a = document.createElement("a");
+    a.href = "#" + h.id;
+    a.textContent = h.textContent;
+    toc.append(a);
+  }
+</script>
+</body>
+</html>
