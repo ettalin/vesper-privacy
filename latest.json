@@ -1,7 +1,7 @@
 {
   "name": "Vesper",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "releasedAt": "2026-09-08",
   "download": "https://github.com/ettalin/vesper/releases/latest",
-  "notes": ""
+  "notes": "Update button and out-of-date warning"
 }
