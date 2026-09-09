@@ -86,8 +86,8 @@
 <p class="lede">Vesper records how you spend your time in one Chrome profile, so it can write your day up for you.</p>
 
 <div class="card key">
-  <p><strong>What Vesper records stays on your own computer</strong> — unless you switch on one of the two optional features described below, which send data to addresses <em>you</em> supply, on services <em>you</em> control.</p>
-  <p>Either way, the developer operates no server, receives nothing, and has no way to see anything Vesper records. There is no account, no sign-in, no analytics, no advertising and no third-party code of any kind.</p>
+  <p><strong>Everything Vesper records stays on your own computer.</strong> It is never uploaded, and there is nowhere to upload it to — the developer operates no server and can never see any of it.</p>
+  <p>No account, no sign-in, no analytics, no advertising, and no third-party code of any kind. A day leaves your machine only as a file you choose to save.</p>
 </div>
 
 <div class="toc" id="toc"></div>
@@ -108,7 +108,7 @@
   <li>if you connect a calendar: the <strong>title</strong> and start and end times of meetings that overlap your quiet periods. Meeting titles follow the same switch as page titles — turn titles off and no meeting name is kept, only the timing. Attendees, organisers and locations are never read at all.</li>
   <li>the name you give this workspace, and a work email address if you choose to type one in</li>
   <li>your own notes, and your one-tap answers about quiet periods — together with what Vesper learns from those answers, so it can stop asking</li>
-  <li>your settings, including the calendar address and the spreadsheet address and token, if you enter them</li>
+  <li>your settings, including the calendar address if you enter one</li>
 </ul>
 
 <h2 id="why">Why each of these is recorded</h2>
@@ -122,7 +122,7 @@
     <tr><td>Video call state</td><td>Separating meeting time from heads-down time without counting an hour twice</td></tr>
     <tr><td>Meeting titles and times</td><td>Naming a quiet period so you don't have to, and so it need not ask you</td></tr>
     <tr><td>Notes, answers, what it learns</td><td>Correcting the day before you commit it, and not being asked the same question twice</td></tr>
-    <tr><td>Workspace name and work email</td><td>Telling your profiles apart, and attributing a committed day in your own spreadsheet</td></tr>
+    <tr><td>Workspace name and work email</td><td>Telling your profiles apart, and naming whose timesheet an export is</td></tr>
   </tbody>
 </table>
 
@@ -144,27 +144,18 @@
 <p>In your browser's local extension storage, on your own machine. Vesper uses local storage only and never Chrome's sync storage, so nothing is copied to your Google account or to your other devices.</p>
 <p>Detailed activity is compressed after 7 days and deleted after a period you choose, 45 days by default. <strong>Delete all data</strong> in the settings removes everything immediately. Removing Vesper from <code>chrome://extensions</code> deletes everything it holds.</p>
 
-<h2 id="leaving">The two optional features that send data out of your browser</h2>
-<p>Both are <strong>off</strong> when you install Vesper. Turn neither on and nothing ever leaves your browser. Turn one on and here is exactly what happens.</p>
-
-<h3>1. Your calendar</h3>
-<p>If you paste a private calendar address (an iCal link) into the settings, Vesper fetches that calendar directly from your browser to whichever host you named, so meetings can label themselves. It reads only event titles and their start and end times. It never writes to your calendar, and it sends nothing to anyone. Any secure calendar host works — Google, Outlook, Fastmail or your own.</p>
-
-<h3>2. Committing a day to your spreadsheet</h3>
-<p>If you paste in the address of a Google Apps Script you have deployed to your own Google account, then pressing <strong>Commit</strong> sends that day to your own Google Sheet or Doc. What is sent is the summary you have just reviewed and edited: the line item titles, their kinds and durations, start and end times, any project labels, your notes, the day's totals, your timezone, the workspace name, and the work email if you entered one.</p>
-
-<p>Both addresses are ones you supply, on infrastructure you control, and both must be secure (https). The developer does not operate either destination, never sees either address, and receives nothing from either request. <strong>Once data reaches them it is governed by that provider's terms and your own settings, not by this extension.</strong></p>
+<h2 id="leaving">The one time anything leaves your browser</h2>
+<p>Optional, off by default, and only if you set it up: if you paste your calendar's private address into the settings, Vesper fetches that calendar directly from your browser so meetings can label themselves. It reads only event titles and their start and end times. It never writes to your calendar, and it sends nothing to anyone — not to the developer, not to anybody.</p>
+<p>Leave that empty and <strong>nothing ever leaves your browser at all</strong>.</p>
+<p>Your own exports are the other way data moves, and those are files you save deliberately — a PDF, a spreadsheet or a text file, saved where you choose.</p>
 
 <h2 id="shared">Who your data is shared with, and selling</h2>
 <p>The complete list:</p>
 <ul class="b">
   <li>your own calendar host — only if you connect a calendar, and only to read it</li>
-  <li>your own Google Apps Script and the Google account it belongs to — only if you connect one, and only when you press Commit</li>
-  <li>nobody else</li>
+  <li>nobody else, ever</li>
 </ul>
-<p>There are no third-party libraries, no analytics service, no advertising network, no crash reporter and no data broker. The extension contains no third-party code.</p>
-
-<p>Your data is never sold, never shared, and never transferred to anyone. It is not used for advertising, for building any profile of you, or for any purpose other than showing you your own time and — at your instruction — sending it to your own spreadsheet. There is no third party of any kind involved.</p>
+<p>There are no third-party libraries, no analytics service, no advertising network, no crash reporter and no data broker. The extension contains no third-party code. Your data is never sold, never shared and never transferred.</p>
 
 <h2 id="limited">Limited Use</h2>
 <p>Vesper's use of information received from Google APIs will adhere to the <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use" rel="noopener">Chrome Web Store User Data Policy</a>, including the Limited Use requirements.</p>
@@ -180,7 +171,7 @@
   <thead><tr><th>What you may want</th><th>How to do it</th></tr></thead>
   <tbody>
     <tr><td>See everything held about you</td><td>Settings → <strong>Back up everything</strong>, which downloads the complete contents as a readable file</td></tr>
-    <tr><td>Take it elsewhere</td><td>The same backup file, plus <code>.csv</code> and <code>.md</code> exports from the Export screen</td></tr>
+    <tr><td>Take it elsewhere</td><td>The Export screen: a PDF, a spreadsheet (<code>.csv</code>) or a text file (<code>.md</code>), for any week, fortnight or month</td></tr>
     <tr><td>Correct something</td><td>Every line item can be renamed, re-timed or removed on the review screen before it is committed</td></tr>
     <tr><td>Erase all of it</td><td>Settings → <strong>Delete all data</strong>, or remove the extension</td></tr>
     <tr><td>Stop the processing</td><td>Pause from the toolbar, at any time</td></tr>
