@@ -81,7 +81,7 @@
 </header>
 
 <h1>Privacy Policy</h1>
-<div class="updated">Last updated <time datetime="2026-09-08">8 September 2026</time></div>
+<div class="updated">Last updated <time datetime="2026-09-28">28 September 2026</time></div>
 
 <p class="lede">Vesper records how you spend your time in one Chrome profile, so it can write your day up for you.</p>
 
@@ -104,8 +104,10 @@
   <li>the full web address of the page — <em>off by default, can be switched on</em></li>
   <li>how long you spent there, and the times you started and stopped</li>
   <li>whether you were typing or reading, and whether your computer was idle, from Chrome's own idle signal</li>
+  <li>the times you were typing while Chrome was in the background. The times only: never what you typed, and never which app you were in, which Chrome does not tell an extension</li>
+  <li>the times your screen was locked or your computer asleep</li>
   <li>whether a video call is running in a tab, and for how long</li>
-  <li>if you connect a calendar: the <strong>title</strong> and start and end times of meetings that overlap your quiet periods. Meeting titles follow the same switch as page titles — turn titles off and no meeting name is kept, only the timing. Attendees, organisers and locations are never read at all.</li>
+  <li>if you connect a calendar: the start and end times of your meetings, and their <strong>titles</strong>. Vesper keeps a copy of the calendar on your computer to do this. Meeting titles follow the same switch as page titles: turn titles off and the copy keeps no meeting names and no event identifiers, only the timing. Attendees, organisers and locations are never read at all.</li>
   <li>the name you give this workspace, and a work email address if you choose to type one in</li>
   <li>your own notes, and your one-tap answers about quiet periods — together with what Vesper learns from those answers, so it can stop asking</li>
   <li>your settings, including the calendar address if you enter one</li>
@@ -119,6 +121,7 @@
     <tr><td>Site, page title, time spent</td><td>The day's line items and the written summary — the whole product</td></tr>
     <tr><td>Search terms</td><td>Turning an hour of scattered tabs into one readable line, such as "Research — capacity planning"</td></tr>
     <tr><td>Typing, reading and idle state</td><td>Counting reading and calls as work instead of stopping the clock the moment you stop typing</td></tr>
+    <tr><td>Time in other apps, and time locked or asleep</td><td>Counting work done outside the browser, and showing the gaps in a day so a meeting away from the keyboard can be counted with one press instead of being lost</td></tr>
     <tr><td>Video call state</td><td>Separating meeting time from heads-down time without counting an hour twice</td></tr>
     <tr><td>Meeting titles and times</td><td>Naming a quiet period so you don't have to, and so it need not ask you</td></tr>
     <tr><td>Notes, answers, what it learns</td><td>Correcting the day before you commit it, and not being asked the same question twice</td></tr>
@@ -144,16 +147,18 @@
 <p>In your browser's local extension storage, on your own machine. Vesper uses local storage only and never Chrome's sync storage, so nothing is copied to your Google account or to your other devices.</p>
 <p>Detailed activity is compressed after 7 days and deleted after a period you choose, 45 days by default. <strong>Delete all data</strong> in the settings removes everything immediately. Removing Vesper from <code>chrome://extensions</code> deletes everything it holds.</p>
 
-<h2 id="leaving">The one time anything leaves your browser</h2>
+<h2 id="leaving">The two times anything leaves your browser</h2>
+<p>Neither happens until you have pressed <strong>Start tracking</strong>, and neither carries anything about you.</p>
 <p>Optional, off by default, and only if you set it up: if you paste your calendar's private address into the settings, Vesper fetches that calendar directly from your browser so meetings can label themselves. It reads only event titles and their start and end times. It never writes to your calendar, and it sends nothing to anyone — not to the developer, not to anybody.</p>
-<p>Leave that empty and <strong>nothing ever leaves your browser at all</strong>.</p>
+<p>If you installed Vesper directly rather than from the Chrome Web Store, it also reads one small public file that says what the latest version is: when Chrome starts, and twice a day. You can switch that off in the settings. A copy from the Chrome Web Store never does this, because Chrome updates it.</p>
+<p>Leave the calendar empty and switch that check off, and <strong>nothing leaves your browser at all</strong>.</p>
 <p>Your own exports are the other way data moves, and those are files you save deliberately — a PDF, a spreadsheet or a text file, saved where you choose.</p>
 
 <h2 id="shared">Who your data is shared with, and selling</h2>
 <p>The complete list:</p>
 <ul class="b">
   <li>your own calendar host — only if you connect a calendar, and only to read it</li>
-  <li>this site, if you installed Vesper directly rather than from the Chrome Web Store: once a day it reads a small file here that contains nothing but the latest version number, so it can tell you an update exists. It sends nothing with that request — no identifier, no usage, not even a cookie — and you can turn it off in settings. A copy installed from the Chrome Web Store never makes this request at all, because Chrome does the updating.</li>
+  <li>this site, if you installed Vesper directly rather than from the Chrome Web Store: when Chrome starts, and twice a day, it reads a small file here that contains nothing but the latest version number, so it can tell you an update exists. It sends nothing with that request — no identifier, no usage, not even a cookie — and you can turn it off in settings. A copy installed from the Chrome Web Store never makes this request at all, because Chrome does the updating.</li>
   <li>nobody else, ever</li>
 </ul>
 <p>There are no third-party libraries, no analytics service, no advertising network, no crash reporter and no data broker. The extension contains no third-party code. Your data is never sold, never shared and never transferred.</p>
@@ -189,6 +194,9 @@
 
 <h2 id="changes">Changes to this policy</h2>
 <p>If this policy changes, the date at the top changes with it, and the previous versions remain visible in the public history of the repository this page is published from.</p>
+<ul class="b">
+  <li>28 September 2026: added the two things Vesper has recorded since version 1.6 (time in other apps, and time locked or asleep); corrected how often the version check runs and that it waits for Start tracking; meeting names are now removed from the stored calendar when titles are off.</li>
+</ul>
 
 <h2 id="contact">Contact</h2>
 <p id="contact-line">Questions about this policy, or about Vesper: <a href="mailto:bkeepersja@gmail.com">bkeepersja@gmail.com</a></p>
