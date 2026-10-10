@@ -1,7 +1,7 @@
 {
-  "name": "Vesper — Private Time Tracker",
-  "version": "1.7.1",
-  "releasedAt": "2026-10-03",
+  "name": "Hourray: Private Time Tracker",
+  "version": "1.8.0",
+  "releasedAt": "2026-10-07",
   "download": "https://github.com/ettalin/vesper/releases/latest",
-  "notes": "Vesper 1.7: easier to use. A cleaner summary of your day, Say what it was for time away from Chrome, settings in cards with a side panel option, a welcome and a short tour, text size, Copy my day, lines that always add up to the day, and the Vesper website one click away from the logo."
+  "notes": "Vesper is now called Hourray. It's the same extension, and your days, settings and backups carry over. Hourray counts your hours for you: a clean summary of your day, Review the day with the times you actually worked on each line, Say what it was for time away from Chrome, settings, review and exports in a side panel if you like, text size, Copy my day, and timesheets by project."
 }
