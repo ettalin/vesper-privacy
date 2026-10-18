@@ -1,7 +1,7 @@
 {
-  "name": "Hourray: Private Time Tracker",
-  "version": "1.8.0",
-  "releasedAt": "2026-10-07",
+  "name": "Hourray: Automatic Time Tracker & Focus Timer",
+  "version": "1.9.0",
+  "releasedAt": "2026-10-18",
   "download": "https://github.com/ettalin/vesper/releases/latest",
-  "notes": "Vesper is now called Hourray. It's the same extension, and your days, settings and backups carry over. Hourray counts your hours for you: a clean summary of your day, Review the day with the times you actually worked on each line, Say what it was for time away from Chrome, settings, review and exports in a side panel if you like, text size, Copy my day, and timesheets by project."
+  "notes": "Hourray 1.9: tracking checked to the minute and over 25 counting fixes; a focus timer (Classic 25/5, Deep 50/10, Flow); it stops counting after a quiet stretch you choose and asks what the time was; pause for 15 minutes, an hour or until tomorrow; don't track a site in one click; attach a link, a PDF or picture, or a note to any line; exports as PDF, spreadsheet or .md; a year of history; a new look."
 }
