@@ -1,7 +1,7 @@
 {
   "name": "Hourray: Automatic Time Tracker & Focus Timer",
-  "version": "1.10.3",
+  "version": "1.10.4",
   "releasedAt": "2026-10-18",
   "download": "https://github.com/ettalin/vesper/releases/latest",
-  "notes": "Hourray now opens with Alt+Shift+H (Option+Shift+H on a Mac). If you already had Hourray, Chrome may keep your old key: change it in Settings, under Open Hourray from the keyboard."
+  "notes": "If you remove Hourray after starting tracking, Chrome opens a short page on the Hourray website asking what went wrong. Answering is optional, and nothing is sent unless you choose to send it."
 }
