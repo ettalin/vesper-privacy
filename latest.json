@@ -1,7 +1,7 @@
 {
   "name": "Hourray: Automatic Time Tracker & Focus Timer",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "releasedAt": "2026-10-18",
   "download": "https://github.com/ettalin/vesper/releases/latest",
-  "notes": "Hourray 1.9: tracking checked to the minute and over 25 counting fixes; a focus timer (Classic 25/5, Deep 50/10, Flow); it stops counting after a quiet stretch you choose and asks what the time was; pause for 15 minutes, an hour or until tomorrow; don't track a site in one click; attach a link, a PDF or picture, or a note to any line; exports as PDF, spreadsheet or .md; a year of history; a new look."
+  "notes": "The focus timer grows. An hourglass at the heart of the focus card shows the round as sand. Make up to 8 focus modes of your own. Say what a session is for and, after it, what got done; the review page lists each session. An optional daily focus goal, and an optional reminder if you open a site you listed during a round, with Back to work. All off or quiet until you turn them on; tracking is unchanged."
 }

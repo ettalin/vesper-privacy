@@ -107,7 +107,8 @@
   <li>the times you were typing while Chrome was in the background. The times only: never what you typed, and never which app you were in, which Chrome does not tell an extension</li>
   <li>the times your screen was locked or your computer asleep</li>
   <li>whether a video call is running in a tab, and for how long</li>
-  <li>the focus sessions you start: when each one started and ended, its rounds, and a project or a note if you add one</li>
+  <li>the focus sessions you start: when each one started and ended, its rounds and which mode it used, a project if you set one, and the words you choose to type about it, what it is for and what got done. Your own focus modes and your daily focus goal, if you set one, are kept the same way</li>
+  <li>if you turn focus reminders on, the list of sites you want to be reminded about. While a focus round is running, the site in the tab in front is compared with that list on this computer. Nothing is blocked, nothing is closed, and nothing about it is sent anywhere</li>
   <li>if you connect a calendar: the start and end times of your meetings, and their <strong>titles</strong>. Hourray keeps a copy of the calendar on your computer to do this. Meeting titles follow the same switch as page titles: turn titles off and the copy keeps no meeting names and no event identifiers, only the timing. Attendees, organisers and locations are never read at all.</li>
   <li>the name you give this workspace, and a work email address if you choose to type one in</li>
   <li>the links, files (PDF, JPG or PNG) and notes you choose to attach to a line of your day, as proof of the work. They are kept on this computer, in the extension's own storage, and go into a backup or an export only when you save one</li>
@@ -127,7 +128,8 @@
     <tr><td>Video call state</td><td>Separating meeting time from heads-down time without counting an hour twice</td></tr>
     <tr><td>Meeting titles and times</td><td>Naming a quiet period so you don't have to, and so it need not ask you</td></tr>
     <tr><td>Notes, answers, what it learns</td><td>Correcting the day before it is saved, and not being asked the same question twice</td></tr>
-    <tr><td>Focus sessions</td><td>Showing what a focus session was spent on, and counting it as the work it was</td></tr>
+    <tr><td>Focus sessions, your modes and your words</td><td>Showing what a focus session was for and what came of it, on the day and on the review screen</td></tr>
+    <tr><td>Your list of sites to be reminded about</td><td>The one quiet reminder during a focus round, which is a comparison made on this computer and nothing more</td></tr>
     <tr><td>Attached links, files and notes</td><td>Keeping the proof of a piece of work beside the line that bills it</td></tr>
     <tr><td>Workspace name and work email</td><td>Telling your profiles apart, and naming whose timesheet an export is</td></tr>
   </tbody>
@@ -200,6 +202,7 @@
 <h2 id="changes">Changes to this policy</h2>
 <p>If this policy changes, the date at the top changes with it, and the previous versions remain visible in the public history of the repository this page is published from.</p>
 <ul class="b">
+  <li>18 October 2026: added what version 1.10 keeps about a focus session, including the words you type about it, your own modes, a daily goal, and the list of sites for focus reminders, which is only ever compared on this computer.</li>
   <li>18 October 2026: added the focus sessions introduced in version 1.9, and the links, files and notes you can attach to a line; history is now kept for a year by default rather than 45 days; named the extension's own database (IndexedDB), where attached files are kept.</li>
   <li>28 September 2026: added the two things Hourray has recorded since version 1.6 (time in other apps, and time locked or asleep); corrected how often the version check runs and that it waits for Start tracking; meeting names are now removed from the stored calendar when titles are off.</li>
 </ul>
