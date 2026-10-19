@@ -1,7 +1,7 @@
 {
   "name": "Hourray: Automatic Time Tracker & Focus Timer",
-  "version": "1.10.0",
+  "version": "1.10.1",
   "releasedAt": "2026-10-18",
   "download": "https://github.com/ettalin/vesper/releases/latest",
-  "notes": "The focus timer grows. An hourglass at the heart of the focus card shows the round as sand. Make up to 8 focus modes of your own. Say what a session is for and, after it, what got done; the review page lists each session. An optional daily focus goal, and an optional reminder if you open a site you listed during a round, with Back to work. All off or quiet until you turn them on; tracking is unchanged."
+  "notes": "A focus mode's project now gets the time: while a round of a mode with a project runs, the time you track goes under that project. A document used inside and outside a round shows as two lines that add up to the same minutes, so your day's total never changes, and a project you set by hand still wins."
 }
