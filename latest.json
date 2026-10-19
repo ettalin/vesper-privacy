@@ -1,7 +1,7 @@
 {
   "name": "Hourray: Automatic Time Tracker & Focus Timer",
-  "version": "1.10.1",
+  "version": "1.10.2",
   "releasedAt": "2026-10-18",
   "download": "https://github.com/ettalin/vesper/releases/latest",
-  "notes": "A focus mode's project now gets the time: while a round of a mode with a project runs, the time you track goes under that project. A document used inside and outside a round shows as two lines that add up to the same minutes, so your day's total never changes, and a project you set by hand still wins."
+  "notes": "Settings no longer shows the address Hourray checks for new versions. Nothing else changes."
 }
