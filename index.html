@@ -153,11 +153,12 @@
 <p>In your browser's local extension storage, on your own machine. Files you attach to a line are kept in the extension's own database in the browser (IndexedDB), which no website can read. Hourray uses local storage only and never Chrome's sync storage, so nothing is copied to your Google account or to your other devices.</p>
 <p>History is kept for a year (365 days) by default, and you can choose to keep less in the settings. Detailed activity is compacted after 7 days, and everything older than the period you chose is deleted, including the links, files and notes attached to those days. <strong>Delete all data</strong> in the settings removes everything immediately, attached files included. Removing Hourray from <code>chrome://extensions</code> deletes everything it holds.</p>
 
-<h2 id="leaving">The two times anything leaves your browser</h2>
-<p>Neither happens until you have pressed <strong>Start tracking</strong>, and neither carries anything about you.</p>
+<h2 id="leaving">When anything leaves your browser</h2>
+<p>Two things happen while Hourray is running, and one when you remove it. None of them happens until you have pressed <strong>Start tracking</strong>, and none carries anything about you or your work.</p>
 <p>Optional, off by default, and only if you set it up: if you paste your calendar's private address into the settings, Hourray fetches that calendar directly from your browser so meetings can label themselves. It reads only event titles and their start and end times. It never writes to your calendar, and it sends nothing to anyone — not to the developer, not to anybody.</p>
 <p>If you installed Hourray directly rather than from the Chrome Web Store, it also reads one small public file that says what the latest version is: when Chrome starts, and twice a day. You can switch that off in the settings. A copy from the Chrome Web Store never does this, because Chrome updates it.</p>
-<p>Leave the calendar empty and switch that check off, and <strong>nothing leaves your browser at all</strong>.</p>
+<p>Leave the calendar empty and switch that check off, and while Hourray is running <strong>nothing leaves your browser at all</strong>.</p>
+<p>When you remove Hourray after pressing <strong>Start tracking</strong>, Chrome opens one page on the Hourray website asking what went wrong. Its address carries only Hourray’s version number. Answering is optional, nothing is sent unless you choose to send it, and the page records nothing about the visit. <strong>Delete all data</strong> clears that address, so after it nothing opens at all.</p>
 <p>Your own exports are the other way data moves, and those are files you save deliberately — a PDF, a spreadsheet or a text file, saved where you choose.</p>
 
 <h2 id="shared">Who your data is shared with, and selling</h2>
